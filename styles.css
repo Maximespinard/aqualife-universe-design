@@ -527,7 +527,7 @@ p {
 }
 
 .nav-link:hover {
-  color: var(--deep-blue);
+  color: #00e2ff;
 }
 
 .nav-arrow {
@@ -1297,6 +1297,7 @@ p {
 
 /* ===== HERO SECTION ===== */
 .hero {
+  margin-top: -10px;
   position: relative;
   min-height: 85vh;
   display: flex;
