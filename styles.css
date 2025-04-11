@@ -420,14 +420,14 @@ p {
 
 /* ===== ENHANCED HEADER & NAVIGATION ===== */
 .site-header {
-  position: fixed; /* Changer de sticky à fixed pour un meilleur contrôle */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--dark-blue); /* Même couleur que la hero section */
-  box-shadow: none; /* Enlever l'ombre au début */
-  transition: all 0.3s ease;
+  height: 80px; /* Fixed header height */
+  background-color: var(--dark-blue);
   z-index: var(--z-sticky);
+  transition: all 0.3s ease;
 }
 
 .site-header .nav-link {
@@ -1120,7 +1120,7 @@ p {
 @media (max-width: 1023px) {
   .header-container {
     padding: var(--space-md);
-    height: 70px;
+    height: 80px;
   }
 
   .main-nav {
@@ -1297,12 +1297,14 @@ p {
 /* ===== HERO SECTION ===== */
 .hero {
   position: relative;
-  min-height: calc(100vh - 80px); /* Subtract header height */
+  height: calc(100vh - 80px); /* Subtract header height */
+  min-height: unset; /* Remove min-height to avoid conflicts */
+  margin-top: 50px; /* Add margin to push content below fixed header */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content vertically */
-  padding: var(--space-3xl) 0;
+  justify-content: center;
+  padding: 0; /* Remove vertical padding */
   overflow: hidden;
   background-color: var(--dark-blue);
   background-image: linear-gradient(
@@ -1417,15 +1419,22 @@ p {
 }
 
 .hero-content {
-  margin-top: var(--space-xl);
+  margin-top: 0;
   padding: var(--space-md);
   position: relative;
   z-index: 2;
   color: var(--white);
   max-width: 600px;
-  margin-left: var(--space-md);
-  margin-right: var(--space-md);
-  animation: fadeInUp 1s ease-out;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --vh: 1vh;
+  }
+
+  .hero {
+    height: calc(100 * var(--vh) - 80px);
+  }
 }
 
 .hero h1 {
@@ -1489,7 +1498,7 @@ p {
   z-index: 2;
   width: 100%;
   max-width: 900px;
-  gap: 24px;
+  gap: 30px;
   perspective: 1000px;
 }
 
@@ -1639,6 +1648,7 @@ p {
   .hero-products-row {
     display: flex;
     margin-top: 0;
+    justify-content: space-between;
   }
 }
 
@@ -1771,6 +1781,7 @@ p {
 @media (min-width: 1024px) {
   .hero {
     padding: var(--space-3xl) var(--space-3xl);
+    margin-top: 80px;
   }
 
   .hero-content {
@@ -1785,6 +1796,7 @@ p {
 @media (min-width: 1280px) {
   .hero-content {
     margin-left: var(--space-3xl);
+    padding: 10% 0;
   }
 
   .hero-product-showcase {
