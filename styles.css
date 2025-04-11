@@ -1482,7 +1482,6 @@ p {
   font-weight: 500;
   color: var(--gray-100);
 }
-
 .hero-product-showcase {
   position: relative;
   z-index: 2;
@@ -1492,17 +1491,7 @@ p {
   perspective: 1000px;
 }
 
-.hero-products-row {
-  display: none; /* Hidden by default, shown on larger screens */
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 900px;
-  gap: 30px;
-  perspective: 1000px;
-}
-
-.featured-product-card {
+.featured-product {
   position: relative;
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
@@ -1510,22 +1499,13 @@ p {
   overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: var(--space-lg);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   width: 100%;
   max-width: 400px;
 }
 
-.featured-product-card:first-child {
-  transform: rotateY(2deg) rotateX(2deg);
-}
-
-.featured-product-card:last-child {
-  transform: rotateY(-2deg) rotateX(2deg);
-}
-
-.featured-product-card:hover {
-  transform: rotateY(0deg) rotateX(0deg);
+.featured-product:hover {
+  transform: translateY(-5px);
   box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
 }
 
@@ -1564,11 +1544,7 @@ p {
 .product-details {
   padding: var(--space-lg) var(--space-lg) var(--space-md);
   color: var(--white);
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.3),
-    transparent
-  ); /* Add background gradient */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
 }
 
 .product-details h3 {
@@ -1631,18 +1607,45 @@ p {
   transform: translateY(-2px);
 }
 
+.hero-products-row {
+  display: none; /* Hidden by default, shown on larger screens */
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  gap: 30px;
+  perspective: 1000px;
+}
+
+/* Different styling for each card in the row */
+.hero-products-row .featured-product:first-child {
+  transform: rotateY(2deg) rotateX(2deg);
+}
+
+.hero-products-row .featured-product:nth-child(2) {
+  transform: rotateY(0deg) rotateX(2deg);
+}
+
+.hero-products-row .featured-product:last-child {
+  transform: rotateY(-2deg) rotateX(2deg);
+}
+
+.hero-products-row .featured-product:hover {
+  transform: rotateY(0deg) rotateX(0deg);
+}
+
+/* Media queries */
 @media (min-width: 1200px) {
-  /* Only show two cards on larger screens */
   .hero {
     flex-direction: row;
     justify-content: space-between;
     padding: var(--space-3xl) 10%;
-    align-items: center; /* Keep items vertically centered */
+    align-items: center;
   }
 
   .hero-content {
     margin-left: 0;
-    align-self: center; /* Keep vertically centered */
+    align-self: center;
     max-width: 40%;
   }
 
