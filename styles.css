@@ -1564,6 +1564,11 @@ p {
 .product-details {
   padding: var(--space-lg) var(--space-lg) var(--space-md);
   color: var(--white);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.3),
+    transparent
+  ); /* Add background gradient */
 }
 
 .product-details h3 {
