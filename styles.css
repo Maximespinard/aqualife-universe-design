@@ -105,7 +105,6 @@ body {
   background-color: var(--white);
   overflow-x: hidden;
   transition: background-color var(--transition-normal);
-  padding-top: 80px; /* header */
 }
 
 body.menu-open,
@@ -1297,12 +1296,12 @@ p {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  margin-top: -10px;
   position: relative;
-  min-height: 85vh;
+  min-height: calc(100vh - 80px); /* Subtract header height */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Center content vertically */
   padding: var(--space-3xl) 0;
   overflow: hidden;
   background-color: var(--dark-blue);
@@ -1482,7 +1481,17 @@ p {
   perspective: 1000px;
 }
 
-.featured-product {
+.hero-products-row {
+  display: none; /* Hidden by default, shown on larger screens */
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  gap: 24px;
+  perspective: 1000px;
+}
+
+.featured-product-card {
   position: relative;
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
@@ -1491,12 +1500,22 @@ p {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: var(--space-lg);
-  transform: rotateY(2deg) rotateX(2deg);
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  width: 100%;
+  max-width: 400px;
 }
 
-.featured-product:hover {
+.featured-product-card:first-child {
+  transform: rotateY(2deg) rotateX(2deg);
+}
+
+.featured-product-card:last-child {
+  transform: rotateY(-2deg) rotateX(2deg);
+}
+
+.featured-product-card:hover {
   transform: rotateY(0deg) rotateX(0deg);
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
 }
 
 .featured-label {
@@ -1594,6 +1613,37 @@ p {
 .shop-now-btn:hover {
   background-color: var(--turquoise);
   transform: translateY(-2px);
+}
+
+@media (min-width: 1200px) {
+  /* Only show two cards on larger screens */
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--space-3xl) 10%;
+    align-items: center; /* Keep items vertically centered */
+  }
+
+  .hero-content {
+    margin-left: 0;
+    align-self: center; /* Keep vertically centered */
+    max-width: 40%;
+  }
+
+  .hero-product-showcase {
+    display: none; /* Hide the single product showcase */
+  }
+
+  .hero-products-row {
+    display: flex;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-content {
+    max-width: 500px;
+  }
 }
 
 /* Floating bubbles animation */
