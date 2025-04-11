@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqualife Universe | Premium Aquatic Experience</title>
+    <meta
+      name="description"
+      content="Discover extraordinary aquatic life. Expert-curated fish and supplies with guaranteed live arrival."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Mobile Nav Toggle -->
+    <button
+      id="menu-toggle"
+      class="mobile-menu-toggle"
+      aria-label="Toggle menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html" aria-label="Aqualife Universe Home">
+            <img src="images/aqualife-logo.webp" alt="Aqualife Universe Logo" />
+          </a>
+        </div>
+
+        <nav class="main-nav" id="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link">
+                Freshwater
+                <svg
+                  class="nav-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M12 16l-6-6h12l-6 6z" />
+                </svg>
+              </a>
+              <div class="dropdown-menu">
+                <div class="dropdown-wrapper">
+                  <div class="dropdown-header">
+                    <h3>Freshwater Collection</h3>
+                    <p>Find the perfect addition to your freshwater aquarium</p>
+                  </div>
+                  <div class="dropdown-grid">
+                    <a href="#" class="menu-card tank-size-bg">
+                      <div class="menu-icon">
+                        <i class="fas fa-ruler"></i>
+                      </div>
+                      <div class="menu-content">
+                        <h4>By Tank Size</h4>
+                        <ul>
+                          <li>Nano</li>
+                          <li>Small (60L)</li>
+                          <li>Medium (100L)</li>
+                          <li>Large (200L+)</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#" class="menu-card region-bg">
+                      <div class="menu-icon">
+                        <i class="fas fa-globe-americas"></i>
+                      </div>
+                      <div class="menu-content">
+                        <h4>By Region</h4>
+                        <ul>
+                          <li>Amazonian</li>
+                          <li>Asian</li>
+                          <li>African</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#" class="menu-card care-level-bg">
+                      <div class="menu-icon">
+                        <i class="fas fa-hand-holding-water"></i>
+                      </div>
+                      <div class="menu-content">
+                        <h4>By Care Level</h4>
+                        <ul>
+                          <li>Beginner Friendly</li>
+                          <li>Intermediate</li>
+                          <li>Expert Only</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#" class="menu-card temperament-bg">
+                      <div class="menu-icon">
+                        <i class="fas fa-fish"></i>
+                      </div>
+                      <div class="menu-content">
+                        <h4>By Temperament</h4>
+                        <ul>
+                          <li>Peaceful</li>
+                          <li>Territorial</li>
+                          <li>Aggressive</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="dropdown-footer">
+                    <a href="#" class="featured-collection">
+                      <div class="featured-image-container freshwater-feature">
+                        <div class="aquarium-illustration">
+                          <div class="aquarium-plants"></div>
+                          <div class="aquarium-fish fish-1"></div>
+                          <div class="aquarium-fish fish-2"></div>
+                          <div class="aquarium-fish fish-3"></div>
+                          <div class="aquarium-bubbles"></div>
+                        </div>
+                      </div>
+                      <div class="featured-overlay">
+                        <span class="featured-tag">Featured</span>
+                        <h4>Amazonian Biotope</h4>
+                        <div class="explore-btn">
+                          Explore <i class="fas fa-arrow-right"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link">
+                Saltwater
+                <svg
+                  class="nav-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M12 16l-6-6h12l-6 6z" />
+                </svg>
+              </a>
+              <div class="dropdown-menu">
+                <div class="dropdown-wrapper">
+                  <div class="dropdown-header">
+                    <h3>Saltwater Collection</h3>
+                    <p>Discover the beauty of our marine species and corals</p>
+                  </div>
+                  <div class="dropdown-grid">
+                    <a href="#" class="menu-card tank-size-bg">
+                      <div class="menu-icon">
+                        <i class="fas fa-ruler"></i>
+                      </div>
+                      <div class="menu-content">
+                        <h4>By Tank Size</h4>
+                        <ul>
+                          <li>Nano Reef</li>
+                          <li>Small Reef (60L)</li>
+                          <li>Medium Reef (100L)</li>
+                          <li>Large Reef (200L+)</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#" class="menu-card type-bg">
+                      <div class="menu-icon">
+                        <i class="fas fa-water"></i>
+                      </div>
+                      <div class="menu-content">
+                        <h4>By Type</h4>
+                        <ul>
+                          <li>Reef-Safe Fish</li>
+                          <li>Corals</li>
+                          <li>Invertebrates</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#" class="menu-card care-level-bg">
+                      <div class="menu-icon">
+                        <i class="fas fa-hand-holding-water"></i>
+                      </div>
+                      <div class="menu-content">
+                        <h4>By Care Level</h4>
+                        <ul>
+                          <li>Beginner Friendly</li>
+                          <li>Intermediate</li>
+                          <li>Expert Only</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#" class="menu-card temperament-bg">
+                      <div class="menu-icon">
+                        <i class="fas fa-fish"></i>
+                      </div>
+                      <div class="menu-content">
+                        <h4>By Temperament</h4>
+                        <ul>
+                          <li>Peaceful</li>
+                          <li>Territorial</li>
+                          <li>Aggressive</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="dropdown-footer">
+                    <a href="#" class="featured-collection">
+                      <div class="featured-image-container saltwater-feature">
+                        <div class="coral-illustration">
+                          <div class="coral-element coral-1"></div>
+                          <div class="coral-element coral-2"></div>
+                          <div class="coral-element coral-3"></div>
+                          <div class="coral-fish fish-1"></div>
+                          <div class="coral-fish fish-2"></div>
+                          <div class="coral-bubbles"></div>
+                        </div>
+                      </div>
+                      <div class="featured-overlay">
+                        <span class="featured-tag">Featured</span>
+                        <h4>Reef-Safe Species</h4>
+                        <div class="explore-btn">
+                          Explore <i class="fas fa-arrow-right"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Plants</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Equipment</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Food</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="search-toggle header-btn" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+
+          <a href="#" class="account-icon header-btn" aria-label="My Account">
+            <i class="fas fa-user"></i>
+          </a>
+
+          <a href="#" class="cart-icon header-btn" aria-label="Shopping Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+      <div class="search-container">
+        <button class="search-close" aria-label="Close search">
+          <i class="fas fa-times"></i>
+        </button>
+        <form class="search-form">
+          <input
+            type="text"
+            placeholder="Search for fish, plants, equipment..."
+            autofocus
+          />
+          <button type="submit" aria-label="Submit search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="quick-links">
+          <h4>Popular Searches</h4>
+          <div class="quick-links-grid">
+            <a href="#">Betta Fish</a>
+            <a href="#">Nano Tanks</a>
+            <a href="#">Live Plants</a>
+            <a href="#">Filters</a>
+            <a href="#">Reef Safe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover Your <span class="highlight">Underwater</span> World</h1>
+        <p>Ethically sourced aquatic life with expert care guidance</p>
+        <div class="hero-cta">
+          <a href="#" class="primary-button"
+            >Shop Fish <i class="fas fa-chevron-right"></i
+          ></a>
+          <a href="#" class="secondary-button">Expert Guide</a>
+        </div>
+        <div class="hero-features">
+          <div class="hero-feature">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Live Arrival Guarantee</span>
+          </div>
+          <div class="hero-feature">
+            <i class="fas fa-certificate"></i>
+            <span>Expert Selection</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-product-showcase">
+        <div class="hero-backdrop"></div>
+        <div class="featured-product">
+          <div class="featured-label">Featured Species</div>
+          <div class="product-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Royal Blue Tang"
+              class="product-image"
+            />
+          </div>
+          <div class="product-details">
+            <h3>Royal Blue Tang</h3>
+            <p class="scientific-name">Paracanthurus hepatus</p>
+            <div class="product-tags">
+              <span class="product-tag reef-safe">Reef Safe</span>
+              <span class="product-tag">Pacific</span>
+            </div>
+            <div class="product-price">
+              <span class="price">$89.99</span>
+              <a href="#" class="shop-now-btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="floating-bubbles">
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- Smart Filtering Showcase -->
+    <section class="smart-filtering">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Find Your Perfect Fish</h2>
+          <p class="section-subtitle">
+            Our smart filtering system helps you discover the ideal species for
+            your aquarium
+          </p>
+        </div>
+
+        <div class="filter-showcase">
+          <div class="filter-categories">
+            <div class="filter-category active" data-category="size">
+              <div class="filter-icon">
+                <i class="fas fa-ruler"></i>
+              </div>
+              <h3>Aquarium Size</h3>
+              <p>Find fish that thrive in your tank</p>
+            </div>
+
+            <div class="filter-category" data-category="temperament">
+              <div class="filter-icon">
+                <i class="fas fa-fish"></i>
+              </div>
+              <h3>Temperament</h3>
+              <p>Match personalities for harmony</p>
+            </div>
+
+            <div class="filter-category" data-category="care">
+              <div class="filter-icon">
+                <i class="fas fa-hand-holding-water"></i>
+              </div>
+              <h3>Care Level</h3>
+              <p>Choose based on your experience</p>
+            </div>
+
+            <div class="filter-category" data-category="origin">
+              <div class="filter-icon">
+                <i class="fas fa-globe-americas"></i>
+              </div>
+              <h3>Geographic Origin</h3>
+              <p>Explore species from around the world</p>
+            </div>
+
+            <div class="filter-category" data-category="biotope">
+              <div class="filter-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h3>Biotope</h3>
+              <p>Create authentic natural habitats</p>
+            </div>
+          </div>
+
+          <div class="filter-preview">
+            <div class="filter-content active" id="size-content">
+              <div class="filter-options">
+                <button class="filter-button">Nano Tank</button>
+                <button class="filter-button">60L</button>
+                <button class="filter-button active">100L</button>
+                <button class="filter-button">200L+</button>
+              </div>
+              <div class="filter-preview-image">
+                <img src="/api/placeholder/500/300" alt="Fish for 100L tank" />
+                <div class="filter-preview-overlay">
+                  <h3>Perfect for 100L Tanks</h3>
+                  <a href="#" class="preview-link"
+                    >Browse All <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-content" id="temperament-content">
+              <!-- Similar structure for other filter categories -->
+              <div class="filter-options">
+                <button class="filter-button active">Peaceful</button>
+                <button class="filter-button">Territorial</button>
+                <button class="filter-button">Aggressive</button>
+              </div>
+              <div class="filter-preview-image">
+                <img src="/api/placeholder/500/300" alt="Peaceful fish" />
+                <div class="filter-preview-overlay">
+                  <h3>Peaceful Community Fish</h3>
+                  <a href="#" class="preview-link"
+                    >Browse All <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional filter content divs would be here for care, origin, and biotope -->
+          </div>
+        </div>
+
+        <div class="filter-cta">
+          <a href="#" class="primary-button"
+            >Use Advanced Filters <i class="fas fa-sliders-h"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="featured-collections">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Collections</h2>
+          <a href="#" class="view-all"
+            >View All <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="collections-grid">
+          <a href="#" class="collection-card large">
+            <div class="collection-image">
+              <img src="/api/placeholder/600/500" alt="Freshwater Aquariums" />
+            </div>
+            <div class="collection-content">
+              <h3>Freshwater</h3>
+              <span class="collection-tag">120+ Species</span>
+            </div>
+          </a>
+
+          <a href="#" class="collection-card">
+            <div class="collection-image">
+              <img src="/api/placeholder/400/300" alt="Saltwater Fish" />
+            </div>
+            <div class="collection-content">
+              <h3>Saltwater</h3>
+              <span class="collection-tag">Reef Safe</span>
+            </div>
+          </a>
+
+          <a href="#" class="collection-card">
+            <div class="collection-image">
+              <img
+                src="/api/placeholder/400/300"
+                alt="Beginner Friendly Fish"
+              />
+            </div>
+            <div class="collection-content">
+              <h3>Beginner Friendly</h3>
+              <span class="collection-tag">Easy Care</span>
+            </div>
+          </a>
+
+          <a href="#" class="collection-card">
+            <div class="collection-image">
+              <img src="/api/placeholder/400/300" alt="Nano Aquariums" />
+            </div>
+            <div class="collection-content">
+              <h3>Nano Aquariums</h3>
+              <span class="collection-tag">Small Spaces</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Products -->
+    <section class="top-products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Popular This Week</h2>
+          <div class="tab-navigation">
+            <button class="tab-button active" data-tab="fish">Fish</button>
+            <button class="tab-button" data-tab="plants">Plants</button>
+            <button class="tab-button" data-tab="equipment">Equipment</button>
+          </div>
+        </div>
+
+        <div class="products-grid tab-content active" id="fish-tab">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/api/placeholder/300/300" alt="Neon Tetra Group" />
+              <div class="product-badges">
+                <span class="badge beginner">Beginner</span>
+                <span class="badge bestseller">Best Seller</span>
+              </div>
+              <div class="product-actions">
+                <button class="quick-view" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="quick-add" aria-label="Quick add to cart">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+                <button class="wishlist" aria-label="Add to wishlist">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Neon Tetra</h3>
+              <p class="scientific-name">Paracheirodon innesi</p>
+              <div class="product-meta">
+                <span class="origin">South America</span>
+                <span class="tank-size">20L+</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">$3.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="bundle-tag">
+              <i class="fas fa-tags"></i> Get 10+ for 15% off
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/api/placeholder/300/300" alt="Betta Fish" />
+              <div class="product-badges">
+                <span class="badge beginner">Beginner</span>
+              </div>
+              <div class="product-actions">
+                <button class="quick-view" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="quick-add" aria-label="Quick add to cart">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+                <button class="wishlist" aria-label="Add to wishlist">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Betta Fish</h3>
+              <p class="scientific-name">Betta splendens</p>
+              <div class="product-meta">
+                <span class="origin">Asia</span>
+                <span class="tank-size">5L+</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">$14.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="bundle-tag">
+              <i class="fas fa-tags"></i> Bundle with food & save 10%
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/api/placeholder/300/300" alt="Clownfish" />
+              <div class="product-badges">
+                <span class="badge intermediate">Intermediate</span>
+                <span class="badge reef-safe">Reef Safe</span>
+              </div>
+              <div class="product-actions">
+                <button class="quick-view" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="quick-add" aria-label="Quick add to cart">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+                <button class="wishlist" aria-label="Add to wishlist">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Ocellaris Clownfish</h3>
+              <p class="scientific-name">Amphiprion ocellaris</p>
+              <div class="product-meta">
+                <span class="origin">Pacific</span>
+                <span class="tank-size">75L+</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">$29.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="bundle-tag">
+              <i class="fas fa-tags"></i> Pair + anemone bundle available
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/api/placeholder/300/300" alt="Discus Fish" />
+              <div class="product-badges">
+                <span class="badge expert">Expert</span>
+              </div>
+              <div class="product-actions">
+                <button class="quick-view" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="quick-add" aria-label="Quick add to cart">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+                <button class="wishlist" aria-label="Add to wishlist">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Red Turquoise Discus</h3>
+              <p class="scientific-name">Symphysodon aequifasciatus</p>
+              <div class="product-meta">
+                <span class="origin">Amazon</span>
+                <span class="tank-size">200L+</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">$69.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="bundle-tag">
+              <i class="fas fa-tags"></i> Buy 3+ and save 20%
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="plants-tab">
+          <!-- Plant product cards would go here -->
+          <div class="placeholder-message">Plant products tab content</div>
+        </div>
+
+        <div class="tab-content" id="equipment-tab">
+          <!-- Equipment product cards would go here -->
+          <div class="placeholder-message">Equipment tab content</div>
+        </div>
+
+        <div class="view-more-container">
+          <a href="#" class="view-more-button">View More Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compatibility Checker Promo -->
+    <section class="compatibility-promo">
+      <div class="container">
+        <div class="compatibility-card">
+          <div class="compatibility-content">
+            <h2>Compatibility Checker</h2>
+            <p>
+              Not sure which fish can live together? Our advanced compatibility
+              tool helps you create the perfect community tank.
+            </p>
+            <a href="#" class="compatibility-button"
+              >Try It Now <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="compatibility-visual">
+            <img
+              src="/api/placeholder/500/300"
+              alt="Fish compatibility checker"
+            />
+            <div class="compatibility-icons">
+              <div class="compat-icon compatible">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="compat-icon caution">
+                <i class="fas fa-exclamation"></i>
+              </div>
+              <div class="compat-icon incompatible">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Banner -->
+    <section class="featured-banner">
+      <div class="banner-content">
+        <span class="overline">Live Arrival Guarantee</span>
+        <h2>Premium Fish Delivered to Your Door</h2>
+        <p>
+          Every fish is carefully selected, ethically sourced, and shipped in
+          temperature-controlled packaging.
+        </p>
+        <a href="#" class="banner-button">Learn How It Works</a>
+      </div>
+      <div class="banner-image">
+        <img
+          src="/api/placeholder/800/500"
+          alt="Fish packaging demonstration"
+        />
+      </div>
+    </section>
+
+    <!-- Customer Experience -->
+    <section class="customer-experience">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Why Aquarists Love Us</h2>
+          <p class="section-subtitle">
+            Join thousands of satisfied hobbyists who trust Aqualife Universe
+          </p>
+        </div>
+
+        <div class="experience-cards">
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Expert Selection</h3>
+            <p>
+              Every species is hand-selected by our team of marine biologists
+              for health and quality.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Guaranteed Arrival</h3>
+            <p>
+              Our innovative shipping methods ensure your aquatic life arrives
+              healthy and stress-free.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fas fa-life-ring"></i>
+            </div>
+            <h3>Lifetime Support</h3>
+            <p>
+              Get expert advice from our specialists for the lifetime of your
+              aquatic pets.
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonials">
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "The neon tetras I ordered arrived perfectly. The colors are
+                vibrant and they're very active. Aqualife's guidance helped me
+                create the perfect environment for them."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="/api/placeholder/60/60" alt="Customer avatar" />
+              <div class="author-info">
+                <h4>Sarah J.</h4>
+                <p>Verified Customer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "As a beginner, I was worried about starting my first saltwater
+                tank. The staff at Aqualife Universe guided me through every
+                step. 3 months in and my tank is thriving!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="/api/placeholder/60/60" alt="Customer avatar" />
+              <div class="author-info">
+                <h4>Michael T.</h4>
+                <p>Verified Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Aquarium Success Center</h2>
+          <div class="education-links">
+            <a href="#" class="education-link">Guides</a>
+            <a href="#" class="education-link">Glossary</a>
+            <a href="#" class="education-link active">Featured</a>
+            <a href="#" class="view-all"
+              >All Resources <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="education-grid">
+          <a href="#" class="education-card featured">
+            <div class="education-image">
+              <img src="/api/placeholder/600/400" alt="First Aquarium Setup" />
+              <span class="education-tag">Featured Guide</span>
+            </div>
+            <div class="education-content">
+              <h3>Complete Guide to Your First Aquarium</h3>
+              <p>
+                A step-by-step walkthrough for beginners, from tank cycling to
+                introducing your first fish.
+              </p>
+              <span class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+
+          <a href="#" class="education-card">
+            <div class="education-image">
+              <img src="/api/placeholder/400/300" alt="Water Chemistry" />
+            </div>
+            <div class="education-content">
+              <h3>Understanding Water Chemistry</h3>
+              <span class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+
+          <a href="#" class="education-card">
+            <div class="education-image">
+              <img src="/api/placeholder/400/300" alt="Fish Compatibility" />
+            </div>
+            <div class="education-content">
+              <h3>Fish Compatibility Guide</h3>
+              <span class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+
+          <a href="#" class="education-card">
+            <div class="education-image">
+              <img src="/api/placeholder/400/300" alt="Plant Care" />
+            </div>
+            <div class="education-content">
+              <h3>Live Plant Care Essentials</h3>
+              <span class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Methods Showcase -->
+    <section class="payment-showcase">
+      <div class="container">
+        <div class="payment-content">
+          <h2>Multiple Payment Options</h2>
+          <p>Choose the payment method that works best for you</p>
+          <div class="payment-icons">
+            <div class="payment-icon">
+              <i class="fab fa-cc-visa"></i>
+              <span>Credit Card</span>
+            </div>
+            <div class="payment-icon">
+              <i class="fab fa-cc-paypal"></i>
+              <span>PayPal</span>
+            </div>
+            <div class="payment-icon">
+              <i class="fab fa-cc-apple-pay"></i>
+              <span>Apple Pay</span>
+            </div>
+            <div class="payment-icon">
+              <i class="fab fa-cc-amazon-pay"></i>
+              <span>Buy Now, Pay Later</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-action -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <h2>Join Our Aquatic Community</h2>
+            <p>
+              Subscribe to receive expert care tips, exclusive offers, and first
+              access to new arrivals.
+            </p>
+            <form class="cta-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit" class="cta-button">
+                Subscribe <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div class="cta-image">
+            <img src="/api/placeholder/500/300" alt="Beautiful aquarium" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img
+              src="/images/aqualife-logo.webp"
+              alt="Aqualife Universe Logo"
+            />
+            <p>Premium aquatic life for enthusiasts of all levels.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" aria-label="Pinterest"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-nav-container">
+            <div class="footer-nav">
+              <h4>Shop</h4>
+              <ul>
+                <li><a href="#">Freshwater Fish</a></li>
+                <li><a href="#">Saltwater Fish</a></li>
+                <li><a href="#">Live Plants</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Food & Supplements</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-nav">
+              <h4>Help & Info</h4>
+              <ul>
+                <li><a href="#">Shipping Information</a></li>
+                <li><a href="#">Returns & Refunds</a></li>
+                <li><a href="#">Live Arrival Guarantee</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-nav">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">Aquarium Guides</a></li>
+                <li><a href="#">Species Profiles</a></li>
+                <li><a href="#">Compatibility Checker</a></li>
+                <li><a href="#">Water Parameters</a></li>
+                <li>
+                  <a href="#" class="highlight-link"
+                    >Aquarium Glossary <span class="new-badge">New</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="payment-methods">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-apple-pay"></i>
+            <i class="fab fa-cc-discover"></i>
+          </div>
+
+          <div class="copyright">
+            <p>&copy; 2025 Aqualife Universe. All rights reserved.</p>
+          </div>
+
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Action Bar (fixed at bottom for mobile) -->
+    <div class="mobile-action-bar">
+      <a href="#" class="mobile-action" aria-label="Home">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="#" class="mobile-action" aria-label="Categories">
+        <i class="fas fa-th-large"></i>
+        <span>Categories</span>
+      </a>
+      <a href="#" class="mobile-action" aria-label="Search">
+        <i class="fas fa-search"></i>
+        <span>Search</span>
+      </a>
+      <a href="#" class="mobile-action" aria-label="Account">
+        <i class="fas fa-user"></i>
+        <span>Account</span>
+      </a>
+      <a href="#" class="mobile-action" aria-label="Cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Cart</span>
+        <span class="mobile-cart-count">0</span>
+      </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Performance Indicator -->
+    <div class="performance-indicator">
+      <div class="performance-icon">
+        <i class="fas fa-bolt"></i>
+      </div>
+      <span>Optimized for lightning-fast browsing</span>
+    </div>
+
+    <!-- JavaScript for interactive elements -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        menuToggle.addEventListener('click', function () {
+          this.classList.toggle('active');
+          mainNav.classList.toggle('active');
+          document.body.classList.toggle('menu-open');
+        });
+
+        // Détection du défilement pour changer la couleur de la barre de navigation
+        window.addEventListener('scroll', () => {
+          const header = document.querySelector('.site-header');
+          if (window.scrollY > 10) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+
+        // Search overlay
+        const searchToggle = document.querySelector('.search-toggle');
+        const searchOverlay = document.getElementById('search-overlay');
+        const searchClose = document.querySelector('.search-close');
+
+        searchToggle.addEventListener('click', function () {
+          searchOverlay.classList.add('active');
+          document.body.classList.add('overlay-open');
+          setTimeout(() => {
+            searchOverlay.querySelector('input').focus();
+          }, 100);
+        });
+
+        searchClose.addEventListener('click', function () {
+          searchOverlay.classList.remove('active');
+          document.body.classList.remove('overlay-open');
+        });
+
+        // Tabs for product sections
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            // Remove active class from all buttons and content
+            tabButtons.forEach((btn) => btn.classList.remove('active'));
+            tabContents.forEach((content) =>
+              content.classList.remove('active')
+            );
+
+            // Add active class to clicked button and corresponding content
+            button.classList.add('active');
+            const tabId = button.getAttribute('data-tab') + '-tab';
+            document.getElementById(tabId).classList.add('active');
+          });
+        });
+
+        // Filter showcase interaction
+        const filterCategories = document.querySelectorAll('.filter-category');
+        const filterContents = document.querySelectorAll('.filter-content');
+
+        filterCategories.forEach((category) => {
+          category.addEventListener('click', () => {
+            // Remove active class from all categories and contents
+            filterCategories.forEach((cat) => cat.classList.remove('active'));
+            filterContents.forEach((content) =>
+              content.classList.remove('active')
+            );
+
+            // Add active class to clicked category and corresponding content
+            category.classList.add('active');
+            const categoryId =
+              category.getAttribute('data-category') + '-content';
+            document.getElementById(categoryId).classList.add('active');
+          });
+        });
+
+        // Quick add to cart functionality
+        const quickAddButtons = document.querySelectorAll('.quick-add');
+
+        quickAddButtons.forEach((button) => {
+          button.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Animation for adding to cart
+            button.classList.add('added');
+
+            // Update cart count
+            const cartCount = document.querySelector('.cart-count');
+            const mobileCartCount =
+              document.querySelector('.mobile-cart-count');
+            let count = parseInt(cartCount.textContent);
+            cartCount.textContent = count + 1;
+            mobileCartCount.textContent = count + 1;
+
+            // Reset animation after a delay
+            setTimeout(() => {
+              button.classList.remove('added');
+            }, 1500);
+          });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.add('show');
+          } else {
+            backToTopButton.classList.remove('show');
+          }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          });
+        });
+
+        // Performance indicator
+        const performanceIndicator = document.querySelector(
+          '.performance-indicator'
+        );
+
+        // Show performance indicator after page is fully loaded
+        window.addEventListener('load', () => {
+          setTimeout(() => {
+            performanceIndicator.classList.add('show');
+
+            // Hide it after a few seconds
+            setTimeout(() => {
+              performanceIndicator.classList.remove('show');
+            }, 5000);
+          }, 1000);
+        });
+
+        // Dropdown hover behavior for desktop
+        const hasDropdowns = document.querySelectorAll('.has-dropdown');
+
+        function handleDropdownHover() {
+          if (window.innerWidth >= 1024) {
+            hasDropdowns.forEach((item) => {
+              item.addEventListener('mouseenter', function () {
+                this.classList.add('hover');
+              });
+
+              item.addEventListener('mouseleave', function () {
+                this.classList.remove('hover');
+              });
+            });
+          }
+        }
+
+        // Initial call
+        handleDropdownHover();
+
+        // Update on resize
+        window.addEventListener('resize', handleDropdownHover);
+      });
+    </script>
+  </body>
+</html>
