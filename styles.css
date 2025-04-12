@@ -1,6 +1,6 @@
 /* 
 Aqualife Universe - Premium Aquatic Experience
-Mobile-first approach with elegant, modern aesthetic
+Mobile-first approach with elegant, modern aesthetic 
 */
 
 /* ===== CSS VARIABLES ===== */
@@ -1917,6 +1917,9 @@ p {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   color: var(--white);
 }
+.filter-preview-overlay h3 {
+  color: white;
+}
 
 .preview-link {
   display: inline-flex;
@@ -1984,6 +1987,10 @@ p {
   padding: var(--space-lg);
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   color: var(--white);
+}
+
+.collection-content h3 {
+  color: white;
 }
 
 .collection-tag {
