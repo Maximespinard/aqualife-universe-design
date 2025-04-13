@@ -257,7 +257,7 @@ p {
 .view-all {
   font-weight: 600;
   font-size: 0.875rem;
-  color: var(--gray-300);
+  color: var(--deep-blue);
   display: flex;
   align-items: center;
   position: relative;
@@ -1966,7 +1966,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: var(--space-xl);
+  margin: var(--space-xl) 0;
 }
 
 .size-option {
@@ -1999,6 +1999,9 @@ p {
 }
 
 @media (min-width: 768px) {
+  .size-selector {
+    margin: 0 0 var(--space-xl) 0;
+  }
   .size-option {
     flex: 0 0 auto;
   }
@@ -2896,6 +2899,12 @@ p {
   box-shadow: var(--shadow-lg);
 }
 
+@media (min-width: 768px) {
+  .compatibility-card {
+    max-height: 290px;
+  }
+}
+
 .compatibility-content {
   padding: var(--space-xl);
   order: 2;
@@ -3087,11 +3096,10 @@ p {
 /* ===== EDUCATION SECTION ===== */
 
 .education-section {
-  background-color: var(--dark-blue);
 }
 
 .education-section h2 {
-  color: white;
+  color: var(--deep-blue);
   text-align: center;
 }
 .education-links {
@@ -3104,7 +3112,7 @@ p {
 .education-link {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--gray-300);
+  color: var(--deep-blue);
   padding-bottom: var(--space-xs);
   border-bottom: 2px solid transparent;
   transition: all var(--transition-normal);
@@ -3112,7 +3120,7 @@ p {
 
 .education-link:hover,
 .education-link.active {
-  color: var(white);
+  color: var(--ocean-blue);
 }
 
 .education-grid {
@@ -3267,7 +3275,7 @@ p {
 
 /* ===== FOOTER ===== */
 .site-footer {
-  background-color: var(--navy);
+  background-color: var(--dark-blue);
   color: var(--gray-300);
   padding: var(--space-2xl) 0 var(--space-lg);
   margin-top: var(--space-2xl);
