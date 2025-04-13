@@ -373,7 +373,7 @@ p {
 }
 
 .view-more-button:hover {
-  background-color: var(--gray-50);
+  background-color: var(--turquoise);
   border-color: var(--gray-300);
   transform: translateY(-2px);
 }
