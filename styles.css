@@ -254,10 +254,6 @@ p {
   text-align: center;
 }
 
-.top-products {
-  background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 40%, #e4e7eb 100%);
-}
-
 .view-all {
   font-weight: 600;
   font-size: 0.875rem;
