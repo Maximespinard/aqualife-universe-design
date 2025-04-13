@@ -245,6 +245,10 @@ p {
   text-align: center;
 }
 
+.top-products {
+  background-color: var(--dark-blue);
+}
+
 .view-all {
   font-weight: 600;
   font-size: 0.875rem;
@@ -2186,7 +2190,14 @@ p {
   transform: translateY(-50%) scale(1);
 }
 
+.section-header--top-product,
+h2,
+button {
+  color: white;
+}
+
 /* Results Preview */
+
 .results-preview {
   display: flex;
   flex-direction: column;
@@ -2491,7 +2502,7 @@ p {
   border-radius: var(--radius-full);
   font-weight: 600;
   font-size: 0.875rem;
-  color: var(--gray-600);
+  color: var(--gray-200);
   transition: all var(--transition-normal);
 }
 
