@@ -3131,8 +3131,45 @@ button {
   transform: scale(1.05);
 }
 
-.cta-content h2 {
-  margin-bottom: var(--space-sm);
+/* CSS Placeholder for product images in top-products */
+.top-products .product-image {
+  display: flex; /* Needed to center the icon */
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--ocean-blue),
+    var(--aqua)
+  ); /* Example gradient */
+  position: relative; /* Needed for pseudo-element positioning */
+}
+
+/* Remove background if an actual image exists */
+.top-products .product-image img {
+  background: none; /* Ensure image overrides gradient if present */
+}
+
+/* Add a placeholder icon */
+.top-products .product-image::before {
+  content: '\f578'; /* Font Awesome fish icon */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.2); /* Subtle white icon */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Below potential badges/actions */
+}
+
+/* Ensure icon is hidden if an image is present */
+.top-products .product-image img ~ ::before {
+  display: none;
+}
+
+.product-info {
+  padding: var(--space-md);
 }
 
 .cta-content p {
