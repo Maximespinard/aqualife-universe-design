@@ -2189,8 +2189,7 @@ p {
   transform: translateY(-50%) scale(1);
 }
 
-.section-header--top-product,
-h2,
+.section-header--top-product h2,
 button {
   color: white;
 }
@@ -2541,6 +2540,8 @@ button {
   box-shadow: var(--shadow-md);
   transition: all var(--transition-normal);
   position: relative;
+  display: flex; /* Added */
+  flex-direction: column; /* Added */
 }
 
 .product-card:hover {
@@ -2677,6 +2678,7 @@ button {
 
 .product-info {
   padding: var(--space-md);
+  flex-grow: 1; /* Added */
 }
 
 .scientific-name {
