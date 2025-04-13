@@ -171,6 +171,15 @@ section {
   font-style: italic;
 }
 
+.desktop-only {
+  display: none !important;
+}
+
+@media (min-width: 1200px) {
+  .desktop-only {
+    display: flex !important;
+  }
+}
 /* ===== TYPOGRAPHY ===== */
 h1 {
   font-size: clamp(2rem, 5vw, 3rem);
