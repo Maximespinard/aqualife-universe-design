@@ -372,6 +372,7 @@
         <i class="fas fa-chevron-down"></i>
       </div>
     </section>
+
     <!-- Smart Filtering Showcase -->
     <section class="smart-filtering">
       <div class="container">
@@ -384,99 +385,305 @@
         </div>
 
         <div class="filter-showcase">
-          <div class="filter-categories">
-            <div class="filter-category active" data-category="size">
-              <div class="filter-icon">
-                <i class="fas fa-ruler"></i>
-              </div>
-              <h3>Aquarium Size</h3>
-              <p>Find fish that thrive in your tank</p>
-            </div>
-
-            <div class="filter-category" data-category="temperament">
-              <div class="filter-icon">
-                <i class="fas fa-fish"></i>
-              </div>
-              <h3>Temperament</h3>
-              <p>Match personalities for harmony</p>
-            </div>
-
-            <div class="filter-category" data-category="care">
-              <div class="filter-icon">
+          <!-- Filter Categories Tabs -->
+          <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="size">
+              <div class="tab-icon"><i class="fas fa-ruler"></i></div>
+              <span>Tank Size</span>
+            </button>
+            <button class="filter-tab" data-filter="temperament">
+              <div class="tab-icon"><i class="fas fa-fish"></i></div>
+              <span>Temperament</span>
+            </button>
+            <button class="filter-tab" data-filter="care">
+              <div class="tab-icon">
                 <i class="fas fa-hand-holding-water"></i>
               </div>
-              <h3>Care Level</h3>
-              <p>Choose based on your experience</p>
-            </div>
+              <span>Care Level</span>
+            </button>
+            <button class="filter-tab" data-filter="origin">
+              <div class="tab-icon"><i class="fas fa-globe-americas"></i></div>
+              <span>Region</span>
+            </button>
+            <button class="filter-tab" data-filter="biotope">
+              <div class="tab-icon"><i class="fas fa-water"></i></div>
+              <span>Biotope</span>
+            </button>
+          </div>
 
-            <div class="filter-category" data-category="origin">
-              <div class="filter-icon">
-                <i class="fas fa-globe-americas"></i>
+          <!-- Active Filters Area (Hidden initially) -->
+          <div class="active-filters-panel" id="active-filters">
+            <div class="active-filters-content">
+              <div class="active-filters-header">
+                <h4>Active Filters</h4>
+                <button class="clear-all-btn" id="clear-all-filters">
+                  Clear All
+                </button>
               </div>
-              <h3>Geographic Origin</h3>
-              <p>Explore species from around the world</p>
-            </div>
-
-            <div class="filter-category" data-category="biotope">
-              <div class="filter-icon">
-                <i class="fas fa-water"></i>
+              <div class="filter-tags" id="filter-tags">
+                <!-- Tags will be added dynamically via JS -->
               </div>
-              <h3>Biotope</h3>
-              <p>Create authentic natural habitats</p>
             </div>
           </div>
 
-          <div class="filter-preview">
-            <div class="filter-content active" id="size-content">
-              <div class="filter-options">
-                <button class="filter-button">Nano Tank</button>
-                <button class="filter-button">60L</button>
-                <button class="filter-button active">100L</button>
-                <button class="filter-button">200L+</button>
+          <!-- Size Filter Panel -->
+          <div class="filter-panel active" id="size-panel">
+            <div class="panel-header">
+              <h3>Select Aquarium Size</h3>
+              <p>Find fish perfectly suited for your tank's capacity</p>
+            </div>
+            <div class="size-selector">
+              <div class="size-option" data-size="nano">
+                <div class="size-icon">
+                  <i class="fas fa-compress"></i>
+                </div>
+                <div class="size-info">
+                  <span class="size-name">Nano Tank</span>
+                  <span class="size-value">5-20L</span>
+                </div>
               </div>
-              <div class="filter-preview-image">
+              <div class="size-option" data-size="small">
+                <div class="size-icon">
+                  <i class="fas fa-cube"></i>
+                </div>
+                <div class="size-info">
+                  <span class="size-name">60L</span>
+                  <span class="size-value">40-60L</span>
+                </div>
+              </div>
+              <div class="size-option" data-size="medium">
+                <div class="size-icon">
+                  <i class="fas fa-cubes"></i>
+                </div>
+                <div class="size-info">
+                  <span class="size-name">100L</span>
+                  <span class="size-value">80-120L</span>
+                </div>
+              </div>
+              <div class="size-option" data-size="large">
+                <div class="size-icon">
+                  <i class="fas fa-boxes"></i>
+                </div>
+                <div class="size-info">
+                  <span class="size-name">200L+</span>
+                  <span class="size-value">200L+</span>
+                </div>
+              </div>
+            </div>
+            <div class="results-preview">
+              <div class="results-counter">
+                <div class="count-badge"><span id="size-count">42</span></div>
+                <div class="count-info">
+                  <h4>Species Found</h4>
+                  <p>Based on your selection</p>
+                </div>
+              </div>
+              <div class="preview-card">
                 <img
                   src="https://images.unsplash.com/photo-1579967327980-2a4117da0e4a?q=80&w=2898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Fish for 100L tank"
+                  alt="Fish for your tank"
                 />
-                <div class="filter-preview-overlay">
-                  <h3>Perfect for 100L Tanks</h3>
+                <div class="preview-details">
+                  <div class="preview-title">Perfect for 100L Tanks</div>
                   <a href="#" class="preview-link"
-                    >Browse All <i class="fas fa-arrow-right"></i
+                    >Explore All <i class="fas fa-arrow-right"></i
                   ></a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="filter-content" id="temperament-content">
-              <!-- Similar structure for other filter categories -->
-              <div class="filter-options">
-                <button class="filter-button active">Peaceful</button>
-                <button class="filter-button">Territorial</button>
-                <button class="filter-button">Aggressive</button>
+          <!-- Temperament Filter Panel -->
+          <div class="filter-panel" id="temperament-panel">
+            <div class="panel-header">
+              <h3>Choose Fish Temperament</h3>
+              <p>Create a harmonious community with compatible personalities</p>
+            </div>
+            <div class="filter-chips">
+              <div class="filter-chip" data-temperament="peaceful">
+                <i class="fas fa-dove"></i>
+                <span>Peaceful</span>
               </div>
-              <div class="filter-preview-image">
+              <div class="filter-chip" data-temperament="territorial">
+                <i class="fas fa-flag"></i>
+                <span>Territorial</span>
+              </div>
+              <div class="filter-chip" data-temperament="aggressive">
+                <i class="fas fa-bolt"></i>
+                <span>Aggressive</span>
+              </div>
+            </div>
+            <div class="results-preview">
+              <div class="results-counter">
+                <div class="count-badge">
+                  <span id="temperament-count">36</span>
+                </div>
+                <div class="count-info">
+                  <h4>Species Found</h4>
+                  <p>Based on your selection</p>
+                </div>
+              </div>
+              <div class="preview-card">
                 <img
                   src="https://images.unsplash.com/photo-1497671954146-59a89ff626ff?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Peaceful fish"
                 />
-                <div class="filter-preview-overlay">
-                  <h3>Peaceful Community Fish</h3>
+                <div class="preview-details">
+                  <div class="preview-title">Peaceful Community Fish</div>
                   <a href="#" class="preview-link"
-                    >Browse All <i class="fas fa-arrow-right"></i
+                    >Explore All <i class="fas fa-arrow-right"></i
                   ></a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Additional filter content divs would be here for care, origin, and biotope -->
+          <!-- Care Level Filter Panel -->
+          <div class="filter-panel" id="care-panel">
+            <div class="panel-header">
+              <h3>Select Care Level</h3>
+              <p>Choose fish based on your experience level</p>
+            </div>
+            <div class="filter-chips">
+              <div class="filter-chip" data-care="beginner">
+                <i class="fas fa-seedling"></i>
+                <span>Beginner</span>
+              </div>
+              <div class="filter-chip" data-care="intermediate">
+                <i class="fas fa-spa"></i>
+                <span>Intermediate</span>
+              </div>
+              <div class="filter-chip" data-care="expert">
+                <i class="fas fa-award"></i>
+                <span>Expert</span>
+              </div>
+            </div>
+            <div class="results-preview">
+              <div class="results-counter">
+                <div class="count-badge"><span id="care-count">28</span></div>
+                <div class="count-info">
+                  <h4>Species Found</h4>
+                  <p>Based on your selection</p>
+                </div>
+              </div>
+              <div class="preview-card">
+                <img
+                  src="https://images.unsplash.com/photo-1524704796725-9fc3044a58b2?q=80&w=3005&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Beginner fish"
+                />
+                <div class="preview-details">
+                  <div class="preview-title">Beginner-Friendly Fish</div>
+                  <a href="#" class="preview-link"
+                    >Explore All <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Origin Filter Panel -->
+          <div class="filter-panel" id="origin-panel">
+            <div class="panel-header">
+              <h3>Choose Geographic Region</h3>
+              <p>Explore species from different parts of the world</p>
+            </div>
+            <div class="filter-chips">
+              <div class="filter-chip" data-origin="amazonian">
+                <i class="fas fa-water"></i>
+                <span>Amazonian</span>
+              </div>
+              <div class="filter-chip" data-origin="asian">
+                <i class="fas fa-mountain"></i>
+                <span>Asian</span>
+              </div>
+              <div class="filter-chip" data-origin="african">
+                <i class="fas fa-sun"></i>
+                <span>African</span>
+              </div>
+              <div class="filter-chip" data-origin="australian">
+                <i class="fas fa-star"></i>
+                <span>Australian</span>
+              </div>
+            </div>
+            <div class="results-preview">
+              <div class="results-counter">
+                <div class="count-badge"><span id="origin-count">31</span></div>
+                <div class="count-info">
+                  <h4>Species Found</h4>
+                  <p>Based on your selection</p>
+                </div>
+              </div>
+              <div class="preview-card">
+                <img
+                  src="https://images.unsplash.com/photo-1646022103851-022a7544a3b5?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Amazonian fish"
+                />
+                <div class="preview-details">
+                  <div class="preview-title">Amazonian Species</div>
+                  <a href="#" class="preview-link"
+                    >Explore All <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Biotope Filter Panel -->
+          <div class="filter-panel" id="biotope-panel">
+            <div class="panel-header">
+              <h3>Select Biotope</h3>
+              <p>Create authentic natural habitats in your aquarium</p>
+            </div>
+            <div class="filter-chips">
+              <div class="filter-chip" data-biotope="planted">
+                <i class="fas fa-leaf"></i>
+                <span>Planted</span>
+              </div>
+              <div class="filter-chip" data-biotope="blackwater">
+                <i class="fas fa-tint"></i>
+                <span>Blackwater</span>
+              </div>
+              <div class="filter-chip" data-biotope="reef">
+                <i class="fas fa-water"></i>
+                <span>Reef</span>
+              </div>
+              <div class="filter-chip" data-biotope="rocky">
+                <i class="fas fa-mountain"></i>
+                <span>Rocky</span>
+              </div>
+            </div>
+            <div class="results-preview">
+              <div class="results-counter">
+                <div class="count-badge">
+                  <span id="biotope-count">24</span>
+                </div>
+                <div class="count-info">
+                  <h4>Species Found</h4>
+                  <p>Based on your selection</p>
+                </div>
+              </div>
+              <div class="preview-card">
+                <img
+                  src="https://images.unsplash.com/photo-1663294730767-1b65b111fa93?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNhbHQlMjB3YXRlciUyMGZpc2h8ZW58MHx8MHx8fDA%3D"
+                  alt="Planted aquarium"
+                />
+                <div class="preview-details">
+                  <div class="preview-title">Planted Aquarium Species</div>
+                  <a href="#" class="preview-link"
+                    >Explore All <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="filter-cta">
-          <a href="#" class="primary-button"
-            >Use Advanced Filters <i class="fas fa-sliders-h"></i
-          ></a>
+          <a href="#" class="advanced-filters-button">
+            <div class="button-bg"></div>
+            <span>Advanced Filters</span>
+            <i class="fas fa-sliders-h"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -1288,5 +1495,6 @@
         window.addEventListener('resize', handleDropdownHover);
       });
     </script>
+    <script src="js/filter.js"></script>
   </body>
 </html>
