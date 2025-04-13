@@ -367,15 +367,14 @@ p {
 }
 
 .add-to-cart {
-  background-color: var(--aqua);
+  background-color: var(--deep-blue);
   color: var(--white);
   width: 100%;
   font-size: 0.875rem;
-  border-radius: var(--radius-sm);
+  border-radius: var(--dark-blue);
 }
 
 .add-to-cart:hover {
-  background-color: var(--turquoise);
   transform: translateY(-2px);
 }
 
@@ -1807,7 +1806,7 @@ p {
 
 .filter-tab.active {
   color: var(--white);
-  background: linear-gradient(135deg, var(--aqua) 0%, var(--deep-blue) 100%);
+  background-color: var(--aqua);
   box-shadow: 0 5px 15px rgba(0, 188, 212, 0.3);
   transform: translateY(-2px) scale(1.05);
 }
@@ -2113,7 +2112,7 @@ p {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--aqua) 0%, var(--deep-blue) 100%);
+  background: var(--aqua);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2461,7 +2460,7 @@ p {
 }
 
 .tab-button.active {
-  background-color: var(--deep-blue);
+  background-color: var(--aqua);
   color: var(--white);
 }
 
