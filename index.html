@@ -35,7 +35,10 @@
       <div class="header-container">
         <div class="logo">
           <a href="index.html" aria-label="Aqualife Universe Home">
-            <img src="images/aqualife-logo.webp" alt="Aqualife Universe Logo" />
+            <img
+              src="images/aqualife-logo-white.webp"
+              alt="Aqualife Universe Logo"
+            />
           </a>
         </div>
 
@@ -1131,15 +1134,19 @@
           document.body.classList.toggle('menu-open');
         });
 
-        // Détection du défilement pour changer la couleur de la barre de navigation
-        /*  window.addEventListener('scroll', () => {
+        // Detection of scrolling to change nav bar color and logo
+        window.addEventListener('scroll', () => {
           const header = document.querySelector('.site-header');
+          const logoImg = document.querySelector('.logo img');
+
           if (window.scrollY > 10) {
             header.classList.add('scrolled');
+            logoImg.src = 'images/aqualife-logo-blue.webp';
           } else {
             header.classList.remove('scrolled');
+            logoImg.src = 'images/aqualife-logo-white.webp';
           }
-        }); */
+        });
 
         // Search overlay
         const searchToggle = document.querySelector('.search-toggle');

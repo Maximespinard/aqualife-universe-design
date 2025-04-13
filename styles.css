@@ -526,7 +526,7 @@ p {
 }
 
 .nav-link:hover {
-  color: #00e2ff;
+  color: var(--gray-100);
 }
 
 .nav-arrow {
