@@ -261,9 +261,11 @@ p {
 .view-all {
   font-weight: 600;
   font-size: 0.875rem;
-  color: var(--deep-blue);
+  color: var(--gray-300);
   display: flex;
   align-items: center;
+  position: relative;
+  bottom: 6px;
 }
 
 .view-all i {
@@ -1397,7 +1399,7 @@ p {
   position: relative;
   z-index: 2;
   margin-top: var(--space-xl);
-  width: 100%;
+  width: 75%;
   max-width: 450px;
   display: flex;
   justify-content: center;
@@ -2469,7 +2471,7 @@ button {
 .tab-content.active {
   display: grid;
   grid-template-columns: repeat(1, minmax(140px, 1fr));
-  gap: var(--space-lg);
+  gap: var(--space-xl);
 }
 
 .placeholder-message {
@@ -2501,7 +2503,6 @@ button {
 .product-image {
   position: relative;
   overflow: hidden;
-  height: 180px; /* Smaller on mobile */
   background-color: var(--gray-50);
   display: flex;
   align-items: center;
@@ -2790,7 +2791,6 @@ button {
 
 @media (min-width: 768px) {
   .product-image {
-    height: 220px;
   }
 }
 
@@ -2925,6 +2925,15 @@ button {
 }
 
 /* ===== EDUCATION SECTION ===== */
+
+.education-section {
+  background-color: var(--dark-blue);
+}
+
+.education-section h2 {
+  color: white;
+  text-align: center;
+}
 .education-links {
   display: flex;
   align-items: center;
@@ -2935,7 +2944,7 @@ button {
 .education-link {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--gray-600);
+  color: var(--gray-300);
   padding-bottom: var(--space-xs);
   border-bottom: 2px solid transparent;
   transition: all var(--transition-normal);
@@ -2943,8 +2952,7 @@ button {
 
 .education-link:hover,
 .education-link.active {
-  color: var(--deep-blue);
-  border-bottom-color: var(--deep-blue);
+  color: var(white);
 }
 
 .education-grid {
