@@ -325,13 +325,13 @@ p {
 }
 
 .banner-button {
-  background-color: var(--white);
-  color: var(--deep-blue);
+  background-color: var(--aqua);
+  color: var(--white);
   padding: var(--space-sm) var(--space-lg);
 }
 
 .banner-button:hover {
-  background-color: var(--gray-50);
+  background-color: var(--turquoise);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -367,15 +367,16 @@ p {
 }
 
 .add-to-cart {
-  background-color: var(--deep-blue);
+  background-color: var(--aqua);
   color: var(--white);
   width: 100%;
   font-size: 0.875rem;
-  border-radius: var(--dark-blue);
+  border-radius: var(--turquoise);
 }
 
 .add-to-cart:hover {
   transform: translateY(-2px);
+  background-color: var(--turquoise);
 }
 
 /* ===== MOBILE MENU TOGGLE ===== */
@@ -1811,7 +1812,7 @@ p {
 
 .filter-tab.active {
   color: var(--white);
-  background-color: var(--aqua);
+  background-color: var(--deep-blue);
   box-shadow: 0 5px 15px rgba(0, 188, 212, 0.3);
   transform: translateY(-2px) scale(1.05);
 }
@@ -1985,6 +1986,7 @@ p {
 
 /* Filter Panels */
 .filter-panel {
+  background: var(--dark-blue);
   display: none;
   padding: var(--space-lg);
   animation: fadeScale 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
@@ -2000,12 +2002,12 @@ p {
 
 .panel-header h3 {
   font-size: 1.25rem;
-  color: var(--gray-900);
+  color: var(--gray-100);
   margin-bottom: var(--space-xs);
 }
 
 .panel-header p {
-  color: var(--gray-600);
+  color: var(--gray-100);
   font-size: 0.9rem;
 }
 
@@ -2060,11 +2062,7 @@ p {
 
 .size-option.active {
   border-color: var(--aqua);
-  background: linear-gradient(
-    135deg,
-    rgba(0, 188, 212, 0.05) 0%,
-    rgba(25, 118, 210, 0.05) 100%
-  );
+
   box-shadow: 0 6px 12px rgba(0, 188, 212, 0.15);
 }
 
@@ -2153,7 +2151,7 @@ p {
 }
 
 .filter-chip.active {
-  background: linear-gradient(135deg, var(--aqua) 0%, var(--deep-blue) 100%);
+  background: var(--deep-blue);
   border-color: transparent;
   color: var(--white);
   box-shadow: 0 5px 15px rgba(0, 188, 212, 0.3);
@@ -2242,13 +2240,13 @@ p {
 
 .count-info h4 {
   font-size: 1.1rem;
-  color: var(--gray-900);
+  color: var(--gray-100);
   margin-bottom: 3px;
 }
 
 .count-info p {
   font-size: 0.8rem;
-  color: var(--gray-600);
+  color: var(--gray-300);
 }
 
 .preview-card {
@@ -2256,7 +2254,6 @@ p {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  height: 240px;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -2345,7 +2342,7 @@ p {
 
   .preview-card {
     flex: 2;
-    height: 280px;
+    max-height: 280px;
   }
 
   .filter-panel {
@@ -2496,7 +2493,7 @@ p {
 }
 
 .tab-button.active {
-  background-color: var(--aqua);
+  background-color: var(--deep-blue);
   color: var(--white);
 }
 
@@ -2799,7 +2796,7 @@ p {
 .featured-banner {
   display: flex;
   flex-direction: column;
-  background-color: var(--deep-blue);
+  background-color: var(--dark-blue);
   color: var(--white);
   border-radius: var(--radius-lg);
   overflow: hidden;
