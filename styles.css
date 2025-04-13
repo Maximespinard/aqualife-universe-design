@@ -359,9 +359,8 @@ p {
   margin: var(--space-xl) auto 0;
   text-align: center;
   padding: var(--space-sm) var(--space-lg);
-  background-color: transparent;
-  border: 1px solid var(--gray-200);
-  color: var(--gray-800);
+  background-color: var(--aqua);
+  color: white;
 }
 
 .view-more-button:hover {
@@ -2710,7 +2709,7 @@ button {
 
 .bundle-tag {
   position: absolute;
-  bottom: 0;
+  top: 0; /* Changed from bottom to top */
   left: 0;
   width: 100%;
   padding: var(--space-xs) var(--space-sm);
@@ -2721,8 +2720,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(100%);
+  transform: translateY(-100%); /* Changed initial transform */
   transition: transform var(--transition-normal);
+  z-index: 2; /* Ensure it's above the image */
 }
 
 .bundle-tag i {
