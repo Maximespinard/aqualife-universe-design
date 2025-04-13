@@ -2379,9 +2379,6 @@ p {
     margin-bottom: 0;
   }
 
-  .preview-card {
-  }
-
   .size-selector {
     grid-template-columns: repeat(4, 1fr);
   }
