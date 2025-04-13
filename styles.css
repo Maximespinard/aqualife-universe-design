@@ -1411,7 +1411,7 @@ p {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
-  transform: perspective(1000px) rotateY(-5deg);
+  transform: perspective(1000px) rotateY(-2deg);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -1432,10 +1432,6 @@ p {
   border-radius: var(--radius-full);
   z-index: 3;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
-}
-
-.hero-product-showcase:hover .product-image {
-  transform: scale(1.1);
 }
 
 .product-details {
@@ -2490,19 +2486,36 @@ button {
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
+  cursor: pointer;
 }
 
-.product-image {
+product-image {
   position: relative;
   overflow: hidden;
   height: 280px;
+  background-color: var(--gray-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.product-image img {
+.product-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-normal);
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+/* Make sure other elements in product-image sit on top of the image */
+.product-badges,
+.product-actions,
+.bundle-tag {
+  position: absolute;
+  z-index: 2;
 }
 
 .product-card:hover .product-image img {
