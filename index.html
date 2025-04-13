@@ -386,29 +386,46 @@
 
         <div class="filter-showcase">
           <!-- Filter Categories Tabs -->
-          <div class="filter-tabs">
-            <button class="filter-tab active" data-filter="size">
-              <div class="tab-icon"><i class="fas fa-ruler"></i></div>
-              <span>Tank Size</span>
-            </button>
-            <button class="filter-tab" data-filter="temperament">
-              <div class="tab-icon"><i class="fas fa-fish"></i></div>
-              <span>Temperament</span>
-            </button>
-            <button class="filter-tab" data-filter="care">
-              <div class="tab-icon">
-                <i class="fas fa-hand-holding-water"></i>
-              </div>
-              <span>Care Level</span>
-            </button>
-            <button class="filter-tab" data-filter="origin">
-              <div class="tab-icon"><i class="fas fa-globe-americas"></i></div>
-              <span>Region</span>
-            </button>
-            <button class="filter-tab" data-filter="biotope">
-              <div class="tab-icon"><i class="fas fa-water"></i></div>
-              <span>Biotope</span>
-            </button>
+          <!-- Updated Filter Tabs with Mobile Dropdown -->
+          <div class="filter-container">
+            <!-- Mobile Dropdown (Shows on small screens) -->
+            <div class="filter-dropdown-mobile">
+              <select id="mobile-filter-selector" class="filter-select">
+                <option value="size">Tank Size</option>
+                <option value="temperament">Temperament</option>
+                <option value="care">Care Level</option>
+                <option value="origin">Region</option>
+                <option value="biotope">Biotope</option>
+              </select>
+            </div>
+
+            <!-- Desktop Tabs (Hidden on small screens) -->
+            <div class="filter-tabs">
+              <button class="filter-tab active" data-filter="size">
+                <div class="tab-icon"><i class="fas fa-ruler"></i></div>
+                <span>Tank Size</span>
+              </button>
+              <button class="filter-tab" data-filter="temperament">
+                <div class="tab-icon"><i class="fas fa-fish"></i></div>
+                <span>Temperament</span>
+              </button>
+              <button class="filter-tab" data-filter="care">
+                <div class="tab-icon">
+                  <i class="fas fa-hand-holding-water"></i>
+                </div>
+                <span>Care Level</span>
+              </button>
+              <button class="filter-tab" data-filter="origin">
+                <div class="tab-icon">
+                  <i class="fas fa-globe-americas"></i>
+                </div>
+                <span>Region</span>
+              </button>
+              <button class="filter-tab" data-filter="biotope">
+                <div class="tab-icon"><i class="fas fa-water"></i></div>
+                <span>Biotope</span>
+              </button>
+            </div>
           </div>
 
           <!-- Active Filters Area (Hidden initially) -->

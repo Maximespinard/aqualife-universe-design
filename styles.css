@@ -1731,6 +1731,11 @@ p {
   z-index: -1;
 }
 
+.filter-container {
+  width: 100%;
+  position: relative;
+}
+
 .filter-showcase {
   background-color: var(--white);
   border-radius: var(--radius-xl);
@@ -1750,7 +1755,7 @@ p {
 
 /* Filter Tabs Navigation */
 .filter-tabs {
-  display: flex;
+  display: none; /* Hidden by default on mobile */
   overflow-x: auto;
   scrollbar-width: none;
   gap: var(--space-sm);
@@ -1820,6 +1825,44 @@ p {
 
 .filter-tab.active .tab-icon {
   transform: scale(1.2);
+}
+
+/* Mobile Dropdown styling */
+.filter-dropdown-mobile {
+  width: 100%;
+  padding: var(--space-md);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.02),
+    rgba(0, 0, 0, 0.04),
+    rgba(0, 0, 0, 0.02)
+  );
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.filter-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  background-color: var(--white);
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--gray-800);
+  font-size: 0.95rem;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--aqua);
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2);
 }
 
 /* Active Filters Panel */
@@ -2316,6 +2359,12 @@ p {
 
   .filter-panel {
     padding: var(--space-xl);
+  }
+  .filter-dropdown-mobile {
+    display: none; /* Hide dropdown on larger screens */
+  }
+  .filter-tabs {
+    display: flex; /* Show tabs on larger screens */
   }
 }
 
