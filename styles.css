@@ -1296,15 +1296,14 @@ p {
 
 /* ===== HERO SECTION ===== */
 .hero {
+  padding-bottom: 5em;
   position: relative;
-  height: calc(100vh - 80px);
-  min-height: unset;
-  margin-top: 50px;
+  min-height: unset; /* Base min-height */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding-top: 80px; /* Add padding for fixed header */
   overflow: hidden;
   background-color: var(--dark-blue);
   background-image: linear-gradient(
@@ -1346,7 +1345,7 @@ p {
 
 .hero p {
   font-size: 1.125rem;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg); /* Reduced margin */
   opacity: 0.9;
   line-height: 1.6;
 }
@@ -1355,14 +1354,14 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-md);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg); /* Reduced margin */
 }
 
 .hero-features {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-lg);
-  margin-top: var(--space-lg);
+  margin-top: var(--space-md); /* Reduced margin */
 }
 
 .hero-feature {
@@ -1434,7 +1433,7 @@ p {
 
 .product-image-container {
   width: 100%;
-  height: 220px;
+  height: 180px; /* Reduced height */
   overflow: hidden;
   position: relative;
 }
@@ -1494,7 +1493,7 @@ p {
 }
 
 .product-details {
-  padding: var(--space-lg);
+  padding: var(--space-md); /* Reduced padding */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
   color: var(--white);
 }
@@ -1618,7 +1617,10 @@ p {
   }
 
   .hero {
-    height: calc(100 * var(--vh) - 80px);
+    /* Use min-height accounting for header and mobile action bar */
+    min-height: calc(
+      100 * var(--vh) - 136px
+    ); /* 80px header + ~56px action bar */
   }
 
   .hero-content {
@@ -1638,6 +1640,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     padding: var(--space-2xl) var(--space-2xl);
+    height: calc(100vh - 80px); /* Initial height calculation */
   }
 
   .hero-content {
