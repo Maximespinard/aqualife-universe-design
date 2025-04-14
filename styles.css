@@ -434,10 +434,16 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px; /* Fixed header height */
+  height: 60px; /* Fixed header height */
   background-color: var(--dark-blue);
   z-index: var(--z-sticky);
   transition: all 0.3s ease;
+}
+
+@media (min-width: 1025px) {
+  .site-header {
+    height: 80px;
+  }
 }
 
 .site-header .nav-link {
@@ -499,6 +505,12 @@ p {
   height: auto;
   max-height: 50px;
   width: auto;
+  position: relative;
+  bottom: 2px;
+}
+
+.logo {
+  margin: auto;
 }
 
 .logo img:hover {
@@ -1126,11 +1138,16 @@ p {
   background-color: var(--deep-blue);
 }
 
+.logo {
+  width: 45%;
+  position: relative;
+  bottom: 6px;
+}
+
 /* Mobile adjustments */
 @media (max-width: 1023px) {
   .header-container {
     padding: var(--space-md);
-    height: 80px;
   }
 
   .main-nav {
@@ -1358,6 +1375,13 @@ p {
   margin-bottom: var(--space-lg); /* Reduced margin */
   opacity: 0.9;
   line-height: 1.6;
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .hero p {
+    padding: 0;
+  }
 }
 
 .hero-cta {
@@ -2978,6 +3002,18 @@ p {
 .banner-content {
   padding: var(--space-xl);
   order: 2;
+}
+
+@media (min-width: 768px) {
+  .featured-banner {
+    max-height: 400px;
+    padding: 0;
+  }
+
+  .banner-content {
+    padding: var(--space-xl);
+    order: 2;
+  }
 }
 
 .banner-content h2 {
